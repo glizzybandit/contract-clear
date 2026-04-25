@@ -1,58 +1,31 @@
 # Contract Clear
 
-Contract Clear is a smart contract analysis tool that turns Ethereum contracts into clear, readable explanations.
+Contract Clear is a smart contract analysis tool that translates blockchain contracts into plain English. It helps users understand what a contract does, highlights potential risks, and breaks down permissions in a simple, readable format.
 
-Paste a contract address and get a breakdown of what it does, what risks it has, and what permissions it contains — without needing to read Solidity code.
+## What it does
 
----
+- Converts raw smart contract data into human-readable summaries  
+- Detects common risk patterns (minting, pausing, ownership controls, etc.)  
+- Generates a risk score based on contract behavior  
+- Displays detected features and permissions in a structured UI  
+- Supports Ethereum contract analysis via public blockchain data
 
-## What it shows
+## Tech Stack
 
-- Plain English summary of the contract
-- Risk score (0–100)
-- Key security concerns (if any)
-- Detected features (minting, pausing, ownership, etc.)
-- Basic technical details from the contract
+- Next.js (frontend + API routes)
+- Node.js backend logic
+- Etherscan API for contract data
+- AI-based summarization layer
+- Deployed on Vercel
 
----
+## Purpose
 
-## Why it exists
+The goal of this project is to make smart contracts easier to understand for non-technical users and improve transparency in on-chain interactions.
 
-Most smart contracts are hard to understand unless you can read code.
+## Disclaimer
 
-This tool is built to make contract behavior more transparent so users can quickly understand what they’re interacting with before signing transactions.
+This tool provides informational analysis only and should not be used as financial or investment advice.
 
----
+## Status
 
-## Stack
-
-- Next.js
-- TypeScript
-- Node.js API routes
-- Etherscan API
-- AI-based analysis layer
-- Hosted on Vercel
-
----
-
-## Notes
-
-- This tool is for informational use only
-- It does not provide financial advice
-- Results are automated and may not always be complete or accurate
-
----
-
-## Roadmap
-
-- Multi-chain support (Base, Arbitrum, Polygon)
-- Wallet-level contract exposure analysis
-- Improved vulnerability detection
-- Token holder distribution insights
-- Faster, more structured AI explanations
-
----
-
-## Built by
-
-glizzybandit
+Actively in development.
